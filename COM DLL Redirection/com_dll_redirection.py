@@ -1,18 +1,13 @@
+#used for DLL redirection, create .local copy for each COM DLL plus copy other .exe's as well to specified folder.
 import os,sys,shutil
-### copies a list of files from source. handles duplicates.
+
 def rename(file_name, dst, num):
-	#splits file name to add number distinction
 	(file_prefix, extension) = os.path.splitext(file_name)
 	if num == 0:
 		renamed = file_prefix + extension#"%s%s" %  (file_prefix, extension)
 	else:
 		new_extension = ".local"
 		renamed = file_prefix + new_extension#"%s%s" % (file_prefix, new_extension)
-	#if "com" in file_prefix:
-	#	new_extension = ".local"
-	#	renamed = file_prefix + new_extension#"%s%s" % (file_prefix, new_extension)
-	#else:
-	#	renamed = file_prefix + extension#"%s%s" %  (file_prefix, extension)
 	return renamed
 
 def copy_files(src,dst,file_list):
@@ -49,8 +44,6 @@ def copy_files(src,dst,file_list):
 
 def read_file(file_name):
     f = open(file_name)
-    #reads each line of file (f), strips out extra whitespace and 
-    #returns list with each line of the file being an element of the list
     content = [x.strip() for x in f.readlines()]
     f.close()
     return content
