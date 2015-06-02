@@ -78,11 +78,11 @@ def display_again():
             for tag in right_side.findChildren():
                 if (len(tag.findChildren()) == 0):
                     right_side_data.append(tag.text)
-            #formaing final text to display
+            #forming final text to display
             first_line_text = left_side_data[0:2] + right_side_data[1:3]
-            print first_line_text
+            print first_line_text #for debugging
             second_line_text = left_side_data[-3:-1] + right_side_data[-2:]
-            print second_line_text
+            print second_line_text #for debugging
 
             final_list = first_line_text + second_line_text
             final_text = ''
@@ -97,51 +97,13 @@ def display_again():
                     final_text = final_text + "\n"
             if not "overs" in right_side_data[-3]:
                 right_side_data[-3] = "Yet to bat"
-            print right_side_data[-3] + "  aaaaa"
+            print right_side_data[-3] #for debugging
             second_line = left_side_data[2] + "(" + left_side_data[-1] + ")" + "\t" + "\t" + right_side_data[0] + "(" + right_side_data[-3] + ")"
             final_text = second_line + "\n" + "------------------------------------------------------" + "\n" + final_text
             print final_text
                 
             balloon_tip(first_line, final_text)       
-                
-            
-##            Batting_Team = soup.find("div",{"class":"ssr-live-card-right-team-name ssr-live-card-right-team-name_178031"})
-##            Bowling_Team = soup.find("div",{"class":"ssr-live-card-left-team-name bowling-team ssr-live-card-left-team-name_178031"})
-##            print Batting_Team
-##            print Batting_Team
-##            First_Line = str(Batting_Team.text) + " vs " + str(Bowling_Team.text) + "\n"
-##            print First_Line
-##            batting_player_stricker = soup.find("span",{"class":"ssr-live-card-player-name ssr-live-card-left-player-name-top-row_178031"})
-##            batting_player_stricker_score = soup.find("span",{"class":"ssr-live-card-player-stats ssr-live-card-left-player-stats-top-row_178031"})
-##            score = soup.find("span",{"class":"ssr-live-card-left-team-total-run ssr-live-card-left-team-total-run_178031"})
-##            current_bowler_name = soup.find("span",{"class":"ssr-live-card-player-name ssr-live-card-right-player-name-top-row_178031"})
-##            current_bowler_figures = soup.find("span",{"class":"ssr-live-card-player-stats ssr-live-card-right-player-stats-top-row_178031"})
-##            
-##            stricker_batting = batting_player_stricker.text.encode("utf-8")
-##            final_stricker = re.sub(r'[^\w]', ' ', stricker_batting)
-##
-##            stricker_bowler = current_bowler_name.text.encode("utf-8")
-##            final_bowler = re.sub(r'[^\w]', ' ', stricker_bowler)
-##            Second_Line_Text = final_stricker.encode("utf-8") + " " + batting_player_stricker_score.text.encode("utf-8") + "\t" + score.text.encode("utf-8") + "\t" + final_bowler.encode("utf-8") + " " + current_bowler_figures.text.encode("utf-8") + "\n"
-##            
-##                          
-##            batting_player_non_stricker = soup.find("span",{"class":"ssr-live-card-player-name ssr-live-card-left-player-name_178031"})
-##            batting_player_non_stricker_score = soup.find("span",{"class":"ssr-live-card-player-stats ssr-live-card-left-player-stats_178031"})
-##            overs = soup.find("span",{"class":"ssr-live-card-left-team-overs ssr-live-card-left-team-overs_178031"})
-##            second_bowler_name = soup.find("span",{"class":"ssr-live-card-player-name ssr-live-card-right-player-name_178031"})
-##            second_bowler_figures = soup.find("span",{"class":"ssr-live-card-player-stats ssr-live-card-right-player-stats_178031"})
-##
-##            #Third_Line_Text = str(batting_player_non_stricker.text.encode("utf-8")) + ' ' + str(batting_player_non_stricker_score.text.encode("utf-8")) + "\t" + str(overs.text.encode("utf-8")) + "\t" + str(second_bowler_name.text.encode("utf-8")) + ' ' + str(second_bowler_figures.text.encode("utf-8"))
-##            Third_Line_Text = batting_player_non_stricker.text.encode("utf-8") + " " + batting_player_non_stricker_score.text.encode("utf-8") + "  " + overs.text.encode("utf-8") + "  " + second_bowler_name.text.encode("utf-8") + " " + second_bowler_figures.text.encode("utf-8")
-##
-##            Final_String  = First_Line + Second_Line_Text + Third_Line_Text
-##            
-##            #fielding_team = soup.find("div",{"class":"ssr-mc-slot-right-teams-name"})
-##            #between_team = str(batting_team.text) + " vs " + str(fielding_team.text)
-##            #item2 = between_team + "\n"
-##            #for item in soup.find_all("div",{"class":"ssr-mc-slot-match-status-concluded"}):
-##            #    item2 = item2 + item.text.encode("utf-8") + "\n"
-            #balloon_tip("Match Status", Final_String)
+
             
 if __name__ == '__main__':
         display_again()
