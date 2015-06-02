@@ -1,0 +1,7 @@
+this will be usefull while making EP.
+we have certain set of projects in vc10 folder say X
+tptal projects might be X + 20
+
+
+this script will tell which all rest 20 projects name,
+soo that we can check them out from feature tracker.

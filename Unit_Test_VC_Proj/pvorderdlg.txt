@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="new_config|Win32">
+      <Configuration>new_config</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test Debug|Win32">
+      <Configuration>Test Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test Release (No Unit Tests)|Win32">
+      <Configuration>Test Release (No Unit Tests)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test Release|Win32">
+      <Configuration>Test Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Unit Test|Win32">
+      <Configuration>Unit Test</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{A67E17FD-FA6C-7482-22D1-F8FB349FE0B0}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Test Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test Debug|Win32'">
+    <OutDir>p:\win32d\</OutDir>
+    <IntDir>.\TestDebug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(OutDir);c:\program files\cerner;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>.\;..\..\include\r_integrationinclude;..\..\thirdparty\gmock-1.5.0\include;..\..\thirdparty\gmock-1.5.0\gtest\include;..\..\thirdparty\callforwardingframework;..\..\include\r_pvorderinclude;..\..\include\r_pvorderpoeinclude;..\..\include\r_pvpwinclude;..\..\include\r_carecoordcontrols;..\..\include\r_kdmoinclude;..\..\include\r_pvordreview;..\..\include\r_pvmulinclude;..\..\include\r_omdbtinclude;p:\include;p:\include_ots\xtremetoolkit;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);..\..\lib\gmock-1.5.0\release;..\..\lib\callforwardingframework;p:\lib;$(LibraryPath)</LibraryPath>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test Release|Win32'">
+    <OutDir>p:\win32\</OutDir>
+    <IntDir>.\TestRelease\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>$(OutDir);c:\program files\cerner;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>.\;..\..\include\r_integrationinclude;..\..\thirdparty\gmock-1.5.0\include;..\..\thirdparty\gmock-1.5.0\gtest\include;..\..\thirdparty\callforwardingframework;..\..\include\r_pvorderinclude;..\..\include\r_pvorderpoeinclude;..\..\include\r_pvpwinclude;..\..\include\r_carecoordcontrols;..\..\include\r_kdmoinclude;..\..\include\r_pvordreview;..\..\include\r_pvmulinclude;..\..\include\r_omdbtinclude;p:\include;p:\include_ots\xtremetoolkit;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);..\..\lib\gmock-1.5.0\release;..\..\lib\callforwardingframework;p:\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">
+    <OutDir>p:\win32\</OutDir>
+    <IntDir>.\TestRelease\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(OutDir);c:\program files\cerner;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>..\..\include\r_pvorderinclude;..\..\include\r_pvorderpoeinclude;..\..\include\r_pvpwinclude;..\..\include\r_carecoordcontrols;..\..\include\r_kdmoinclude;..\..\include\r_pvordreview;..\..\include\r_pvmulinclude;..\..\include\r_omdbtinclude;p:\include;p:\include_ots\xtremetoolkit;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);..\..\lib\gmock-1.5.0\release;..\..\lib\callforwardingframework;p:\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">
+    <OutDir>p:\win32\</OutDir>
+    <IntDir>.\TestRelease\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(OutDir);c:\program files\cerner;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>..\..\include\r_pvorderinclude;..\..\include\r_pvorderpoeinclude;..\..\include\r_pvpwinclude;..\..\include\r_carecoordcontrols;..\..\include\r_kdmoinclude;..\..\include\r_pvordreview;..\..\include\r_pvmulinclude;..\..\include\r_omdbtinclude;p:\include;p:\include_ots\xtremetoolkit;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);..\..\lib\gmock-1.5.0\release;..\..\lib\callforwardingframework;p:\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'">
+    <OutDir>p:\win32\</OutDir>
+    <IntDir>.\UnitTest\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(OutDir);c:\program files\cerner;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>.\;..\..\include\r_integrationinclude;..\..\thirdparty\gmock-1.5.0\include;..\..\thirdparty\gmock-1.5.0\gtest\include;..\..\thirdparty\callforwardingframework;..\..\thirdparty\Aegis\aegis\;..\..\include\r_pvorderinclude;..\..\include\r_pvorderpoeinclude;..\..\include\r_pvpwinclude;..\..\include\r_carecoordcontrols;..\..\include\r_kdmoinclude;..\..\include\r_pvordreview;..\..\include\r_pvmulinclude;..\..\include\r_omdbtinclude;p:\include;p:\include_ots\xtremetoolkit;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);..\..\lib\gmock-1.5.0\release;..\..\lib\callforwardingframework;..\..\lib\aegis\;p:\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WINDLL;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\TestDebug\PvOrderDlg.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\TestDebug\PvOrderDlg.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\TestDebug\PvOrderDlg.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\Unittests\PVOrderDlg_unittest.def</ModuleDefinitionFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalOptions> /FIXED:NO  /MAPINFO:EXPORTS  /ignore:4049 /ignore:4217</AdditionalOptions>
+      <AdditionalDependencies>cpsclassmfc.lib;srvcalendarlib.lib;pthread.lib;srvcore.lib;srvcalendars.lib;srvlocales.lib;i18n_localertl.lib;datertl.lib;mpr.lib;pvorderoblib.lib;pvorderobdata.lib;ocxbase.lib;providerselectiondll.lib;pvordclass.lib;pvcodevalue.lib;pvorderdata.lib;msgrtl.lib;DATEDLL.lib;TIMEDLL.lib;pvlib.lib;tab32d30.lib;spr32d70.lib;pvclass.lib;pvcontxt.lib;pvmisc1.lib;pvdata.lib;memlib32.lib;i18n_common.lib;i18n_mfclib.lib;dttmrtl.lib;crmrtl.lib;csalib.lib;srvrtl.lib;pvui.lib;pvmultumdata.lib;pvorderprofilelock.lib;pvorderpoelib.lib;srvdata.lib;logical.lib;secrtl.lib;carecoordcontrols.lib;kiaproblemdxlib.lib;srvinterface.lib;srvframe.lib;PvOrderAsync.lib;PvOrderAsynclib.lib;PvOrderDiagnosesManager.lib;nomenclatureincrementalsearchlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_WINDLL;__PROJECT_NAME__="$(ProjectName)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\TestRelease\PvOrderDlg.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalOptions>/Zm250 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\TestRelease\PvOrderDlg.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\TestRelease\PvOrderDlg.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\unittests\PVOrderDlg_UnitTest.def</ModuleDefinitionFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalOptions> /FIXED:NO  /MAPINFO:EXPORTS  /ignore:4049 /ignore:4217</AdditionalOptions>
+      <BaseAddress>0x3DB70000</BaseAddress>
+      <AdditionalDependencies>gmock.lib;callforwardingframework.lib;pvorderplanmanagercom.lib;cpsclassmfc.lib;srvcalendarlib.lib;pthread.lib;srvcore.lib;srvcalendars.lib;srvlocales.lib;i18n_localertl.lib;datertl.lib;mpr.lib;pvorderoblib.lib;pvorderobdata.lib;ocxbase.lib;providerselectiondll.lib;pvordclass.lib;pvcodevalue.lib;pvorderdata.lib;msgrtl.lib;DATEDLL.lib;TIMEDLL.lib;pvlib.lib;tab32d30.lib;spr32d70.lib;pvclass.lib;pvcontxt.lib;pvmisc1.lib;pvdata.lib;memlib32.lib;i18n_common.lib;i18n_mfclib.lib;dttmrtl.lib;crmrtl.lib;csalib.lib;srvrtl.lib;pvui.lib;pvmultumdata.lib;pvorderprofilelock.lib;pvorderpoelib.lib;srvdata.lib;logical.lib;secrtl.lib;carecoordcontrols.lib;kiaproblemdxlib.lib;srvinterface.lib;srvframe.lib;PvOrderAsync.lib;PvOrderAsynclib.lib;PvOrderPrivilegeRetriever.lib;PvOrderDiagnosesManager.lib;nomenclatureincrementalsearchlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_WINDLL;__PROJECT_NAME__="$(ProjectName)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\TestRelease\PvOrderDlg.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalOptions>/Zm250 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\TestRelease\PvOrderDlg.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\TestRelease\PvOrderDlg.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalOptions> /FIXED:NO  /MAPINFO:EXPORTS  /ignore:4049 /ignore:4217</AdditionalOptions>
+      <BaseAddress>0x3DB70000</BaseAddress>
+      <AdditionalDependencies>pvorderplanmanagercom.lib;cpsclassmfc.lib;srvcalendarlib.lib;pthread.lib;srvcore.lib;srvcalendars.lib;PvOrderAsync.lib;PvOrderAsynclib.lib;srvlocales.lib;i18n_localertl.lib;datertl.lib;mpr.lib;pvorderoblib.lib;pvorderobdata.lib;ocxbase.lib;providerselectiondll.lib;pvordclass.lib;pvcodevalue.lib;pvorderdata.lib;msgrtl.lib;DATEDLL.lib;TIMEDLL.lib;pvlib.lib;tab32d30.lib;spr32d70.lib;pvclass.lib;pvcontxt.lib;pvmisc1.lib;pvdata.lib;memlib32.lib;i18n_common.lib;i18n_mfclib.lib;dttmrtl.lib;crmrtl.lib;csalib.lib;srvrtl.lib;pvui.lib;pvmultumdata.lib;pvorderprofilelock.lib;pvorderpoelib.lib;srvdata.lib;logical.lib;secrtl.lib;carecoordcontrols.lib;kiaproblemdxlib.lib;srvinterface.lib;srvframe.lib;PvOrderPrivilegeRetriever.lib;PvOrderDiagnosesManager.lib;nomenclatureincrementalsearchlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\PVOrderDlg.def</ModuleDefinitionFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_WINDLL;__PROJECT_NAME__="$(ProjectName)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\TestRelease\PvOrderDlg.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalOptions>/Zm250 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\TestRelease\PvOrderDlg.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\TestRelease\PvOrderDlg.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalOptions> /FIXED:NO  /MAPINFO:EXPORTS  /ignore:4049 /ignore:4217</AdditionalOptions>
+      <BaseAddress>0x3DB70000</BaseAddress>
+      <AdditionalDependencies>pvorderplanmanagercom.lib;cpsclassmfc.lib;srvcalendarlib.lib;pthread.lib;srvcore.lib;srvcalendars.lib;PvOrderAsync.lib;PvOrderAsynclib.lib;srvlocales.lib;i18n_localertl.lib;datertl.lib;mpr.lib;pvorderoblib.lib;pvorderobdata.lib;ocxbase.lib;providerselectiondll.lib;pvordclass.lib;pvcodevalue.lib;pvorderdata.lib;msgrtl.lib;DATEDLL.lib;TIMEDLL.lib;pvlib.lib;tab32d30.lib;spr32d70.lib;pvclass.lib;pvcontxt.lib;pvmisc1.lib;pvdata.lib;memlib32.lib;i18n_common.lib;i18n_mfclib.lib;dttmrtl.lib;crmrtl.lib;csalib.lib;srvrtl.lib;pvui.lib;pvmultumdata.lib;pvorderprofilelock.lib;pvorderpoelib.lib;srvdata.lib;logical.lib;secrtl.lib;carecoordcontrols.lib;kiaproblemdxlib.lib;srvinterface.lib;srvframe.lib;PvOrderPrivilegeRetriever.lib;PvOrderDiagnosesManager.lib;nomenclatureincrementalsearchlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\PVOrderDlg.def</ModuleDefinitionFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WINDLL;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\PvOrderDlg.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalOptions>/Zm250 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\PvOrderDlg.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\PvOrderDlg.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;msvcrt.lib;libcd.lib;libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalOptions> /FIXED:NO  /MAPINFO:EXPORTS  /ignore:4049 /ignore:4217</AdditionalOptions>
+      <AdditionalDependencies>pvorderplanmanagercom.lib;cpsclassmfc.lib;srvcalendarlib.lib;pthread.lib;srvcore.lib;srvcalendars.lib;srvlocales.lib;i18n_localertl.lib;datertl.lib;mpr.lib;pvorderoblib.lib;pvorderobdata.lib;ocxbase.lib;providerselectiondll.lib;pvordclass.lib;pvcodevalue.lib;pvorderdata.lib;msgrtl.lib;DATEDLL.lib;TIMEDLL.lib;pvlib.lib;tab32d30.lib;spr32d70.lib;pvclass.lib;pvcontxt.lib;pvmisc1.lib;pvdata.lib;memlib32.lib;i18n_common.lib;i18n_mfclib.lib;dttmrtl.lib;crmrtl.lib;csalib.lib;srvrtl.lib;pvui.lib;pvmultumdata.lib;pvorderprofilelock.lib;pvorderpoelib.lib;srvdata.lib;logical.lib;secrtl.lib;carecoordcontrols.lib;kiaproblemdxlib.lib;srvinterface.lib;srvframe.lib;PvOrderAsync.lib;PvOrderAsynclib.lib;PvOrderPrivilegeRetriever.lib;PvOrderDiagnosesManager.lib;nomenclatureincrementalsearchlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\PVOrderDlg.def</ModuleDefinitionFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>__PROJECT_NAME__="$(ProjectName)";_WINDOWS;_USRDLL;_WINDLL;WIN32;NDEBUG;ORDERSUNITTEST;__PROJECT_NAME__="$(ProjectName)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\unit_test\PvOrderDlg.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>c:\win32_unit_test\PvOrderDlg.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>c:\win32_unit_test\PvOrderDlg.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>.\unittests\PVOrderDlg_unittest.def</ModuleDefinitionFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <AdditionalOptions> /FIXED:NO /ignore:4049 /ignore:4217</AdditionalOptions>
+      <BaseAddress>0x3DB70000</BaseAddress>
+      <AdditionalDependencies>gmock.lib;CallForwardingFramework.lib;cpsclassmfc.lib;srvcalendarlib.lib;pthread.lib;srvcore.lib;srvcalendars.lib;srvlocales.lib;i18n_localertl.lib;datertl.lib;mpr.lib;pvorderoblib.lib;pvorderobdata.lib;ocxbase.lib;providerselectiondll.lib;pvordclass.lib;pvcodevalue.lib;pvorderdata.lib;msgrtl.lib;DATEDLL.lib;TIMEDLL.lib;pvlib.lib;tab32d30.lib;spr32d70.lib;pvclass.lib;pvcontxt.lib;pvmisc1.lib;pvdata.lib;memlib32.lib;i18n_common.lib;i18n_mfclib.lib;dttmrtl.lib;crmrtl.lib;csalib.lib;srvrtl.lib;pvui.lib;pvmultumdata.lib;pvorderprofilelock.lib;pvorderpoelib.lib;srvdata.lib;aegis.lib;logical.lib;secrtl.lib;carecoordcontrols.lib;kiaproblemdxlib.lib;srvinterface.lib;srvframe.lib;PvOrderAsync.lib;PvOrderAsynclib.lib;PvOrderPrivilegeRetriever.lib;PvOrderDiagnosesManager.lib;nomenclatureincrementalsearchlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\exe\aegispreprocessor.exe *.cpp</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>..\..\exe\aegispreprocessor.exe /restore *.cpp</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WINDLL;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\PvOrderDlg.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalOptions>/Zm250 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\PvOrderDlg.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\PvOrderDlg.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions> /FIXED:NO  /MAPINFO:EXPORTS /ignore:4089 /ignore:4049 /ignore:4217</AdditionalOptions>
+      <BaseAddress>0x3DB70000</BaseAddress>
+      <AdditionalDependencies>pvorderplanmanagercom.lib;cpsclassmfc.lib;srvcalendarlib.lib;pthread.lib;srvcore.lib;srvcalendars.lib;srvlocales.lib;i18n_localertl.lib;datertl.lib;mpr.lib;pvorderoblib.lib;pvorderobdata.lib;ocxbase.lib;providerselectiondll.lib;pvordclass.lib;pvcodevalue.lib;pvorderdata.lib;msgrtl.lib;DATEDLL.lib;TIMEDLL.lib;pvlib.lib;tab32d30.lib;spr32d70.lib;pvclass.lib;pvcontxt.lib;pvmisc1.lib;pvdata.lib;memlib32.lib;i18n_common.lib;i18n_mfclib.lib;dttmrtl.lib;crmrtl.lib;csalib.lib;srvrtl.lib;pvui.lib;pvmultumdata.lib;pvorderprofilelock.lib;pvorderpoelib.lib;srvdata.lib;logical.lib;secrtl.lib;carecoordcontrols.lib;kiaproblemdxlib.lib;srvinterface.lib;srvframe.lib;PvOrderAsync.lib;PvOrderAsynclib.lib;PvOrderPrivilegeRetriever.lib;PvOrderDiagnosesManager.lib;nomenclatureincrementalsearchlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\PVOrderDlg.def</ModuleDefinitionFile>
+      <ImportLibrary>.\Release\PvOrderDlg.lib</ImportLibrary>
+      <OutputFile>.\Release\PvOrderDlg.dll</OutputFile>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AlternativeOrderableNode.cpp" />
+    <ClCompile Include="AlternativeOrderablesController.cpp" />
+    <ClCompile Include="AlternativeOrderablesTree.cpp" />
+    <ClCompile Include="BannerWnd.cpp" />
+    <ClCompile Include="CDKiaNomenclatureSearch.cpp" />
+    <ClCompile Include="IVSequenceNameDlg.cpp" />
+    <ClCompile Include="OrderCheckCmb.cpp" />
+    <ClCompile Include="ConvertToInpatientController.cpp" />
+    <ClCompile Include="ConvertToPrescriptionController.cpp" />
+    <ClCompile Include="converttorxdlg.cpp" />
+    <ClCompile Include="datehelper.cpp" />
+    <ClCompile Include="DxSelectionDlg.cpp" />
+    <ClCompile Include="EligibilityBaseWnd.cpp" />
+    <ClCompile Include="EligibilityDetailsDlg.cpp" />
+    <ClCompile Include="EligibilityError.cpp" />
+    <ClCompile Include="EligibilityNoPlan.cpp" />
+    <ClCompile Include="EligibilityPlanPane.cpp" />
+    <ClCompile Include="EligibilityPlansContainer.cpp" />
+    <ClCompile Include="ExactMatchAlternativeNode.cpp" />
+    <ClCompile Include="fonthelper.cpp" />
+    <ClCompile Include="FormularyAlternativeNode.cpp" />
+    <ClCompile Include="FutureOrderBaseWnd.cpp" />
+    <ClCompile Include="FutureOrderInfoWnd.cpp" />
+    <ClCompile Include="FutureOrderScheduleDlg.cpp" />
+    <ClCompile Include="FutureOrderStructController.cpp" />
+    <ClCompile Include="FutureOrderWnd.cpp" />
+    <ClCompile Include="FutureRecurringOrderWnd.cpp" />
+    <ClCompile Include="FutureSingleOrderWnd.cpp" />
+    <ClCompile Include="InfusionTypeDlg.cpp" />
+    <ClCompile Include="kiaclinicaldx.cpp" />
+    <ClCompile Include="LinkedCompGroupDescriptionGenerator.cpp" />
+    <ClCompile Include="LinkedCompGroupOverrideReasonContainerWnd.cpp" />
+    <ClCompile Include="LinkedCompGroupOverrideReasonDlg.cpp" />
+    <ClCompile Include="LinkedCompGroupOverrideReasonWnd.cpp" />
+    <ClCompile Include="listboxex.cpp" />
+    <ClCompile Include="MnemonicDlg.cpp" />
+    <ClCompile Include="NomenclatureSearchDlg.cpp" />
+    <ClCompile Include="NonFormularyAlternativeNode.cpp" />
+    <ClCompile Include="OrderConversionAlternativesWnd.cpp" />
+    <ClCompile Include="OrderConversionController.cpp" />
+    <ClCompile Include="OrderConversionDlg.cpp" />
+    <ClCompile Include="OrderConversionSpread.cpp" />
+    <ClCompile Include="OrderConversionWnd.cpp" />
+    <ClCompile Include="OrderSchedController.cpp" />
+    <ClCompile Include="OrderSchedulerDlg.cpp" />
+    <ClCompile Include="orm_DxTableSpread.cpp" />
+    <ClCompile Include="orm_OrderDxTableDlg.cpp" />
+    <ClCompile Include="OtherFormularyAlternativeNode.cpp" />
+    <ClCompile Include="OtherNonFormularyAlternativeNode.cpp" />
+    <ClCompile Include="PharmacyInfoDlg.cpp" />
+    <ClCompile Include="PharmacyInfoWnd.cpp" />
+    <ClCompile Include="pharmacyproductnonformularysubdlg.cpp" />
+    <ClCompile Include="plancommentsdlg.cpp" />
+    <ClCompile Include="plancommentspread.cpp" />
+    <ClCompile Include="pvactivespread.cpp" />
+    <ClCompile Include="pvactivespreadwnd.cpp" />
+    <ClCompile Include="PvAddFavoriteDlg.cpp" />
+    <ClCompile Include="PvBrowseFolder.cpp" />
+    <ClCompile Include="PvClinicalDiagnosisDlg.cpp" />
+    <ClCompile Include="pvconflictingordersdlg.cpp" />
+    <ClCompile Include="PvConvertToInpatientDlg.cpp" />
+    <ClCompile Include="pvdiscerndialog.cpp" />
+    <ClCompile Include="pvdosecalc.cpp" />
+    <ClCompile Include="PvFavTreeCtrl.cpp" />
+    <ClCompile Include="PvFormularyAlternativesList.cpp" />
+    <ClCompile Include="PvFormularyStatusAgeRestrictionWnd.cpp" />
+    <ClCompile Include="PvFormularyStatusAlternativeDynamicControlsWnd.cpp" />
+    <ClCompile Include="PvFormularyStatusContainerWnd.cpp" />
+    <ClCompile Include="PvFormularyStatusCopayWnd.cpp" />
+    <ClCompile Include="PvFormularyStatusCoverageTextMessagesWnd.cpp" />
+    <ClCompile Include="PvFormularyStatusDlg.cpp" />
+    <ClCompile Include="PvFormularyStatusGroupBoxWnd.cpp" />
+    <ClCompile Include="PvFormularyStatusQuantityLimitsWnd.cpp" />
+    <ClCompile Include="PvFormularyStatusSelectedWnd.cpp" />
+    <ClCompile Include="PvFormularyStatusSpread.cpp" />
+    <ClCompile Include="PvFormularyStatusStepTherapyWnd.cpp" />
+    <ClCompile Include="PvFormularyStatusSummaryLinksWnd.cpp" />
+    <ClCompile Include="pvgenericspread.cpp" />
+    <ClCompile Include="pvgenericspreadwnd.cpp" />
+    <ClCompile Include="PvHighAlertDlg.cpp" />
+    <ClCompile Include="PVHighAlertWnd.cpp" />
+    <ClCompile Include="PVOdExports.cpp" />
+    <ClCompile Include="PVOrderDlg.cpp" />
+    <ClCompile Include="PvOrderDlg_UnitTestExport.cpp" />
+    <ClCompile Include="pvorderexports.cpp" />
+    <ClCompile Include="pvordsentdlg.cpp" />
+    <ClCompile Include="pvordsentwnd.cpp" />
+    <ClCompile Include="PvOrganizeFavoritesDlg.cpp" />
+    <ClCompile Include="PVRemainDoses.cpp" />
+    <ClCompile Include="PvRxMaskDlg.cpp" />
+    <ClCompile Include="pvslidingscaledlg.cpp" />
+    <ClCompile Include="PvTaperDlg.cpp" />
+    <ClCompile Include="PvTaperRegimenSpread.cpp" />
+    <ClCompile Include="PvTnfSelDlg.cpp" />
+    <ClCompile Include="pvtransferdlg.cpp" />
+    <ClCompile Include="pvtransferspread.cpp" />
+    <ClCompile Include="pvtransferspreadwnd.cpp" />
+    <ClCompile Include="pvtransfertab.cpp" />
+    <ClCompile Include="PVValueUnitParser.cpp" />
+    <ClCompile Include="renewalrequestsupphysseldlg.cpp" />
+    <ClCompile Include="ResumeScheduleDlg.cpp" />
+    <ClCompile Include="SchedNowDlg.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Test Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Test Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Test Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Test Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="SuggestedFormularyAlternativeNode.cpp" />
+    <ClCompile Include="SuggestedNonFormularyAlternativeNode.cpp" />
+    <ClCompile Include="supervisingproviderselectiondlg.cpp" />
+    <ClCompile Include="TherapeuticAlternativeNode.cpp" />
+    <ClCompile Include="TherapeuticNonFormularyAlternativeNode.cpp" />
+    <ClCompile Include="FreeTextNonFormularyAlternativeNode.cpp" />
+    <ClCompile Include="TreatmentPeriodSelectionDlg.cpp" />
+    <ClCompile Include="treatmentperiodskipdlg.cpp" />
+    <ClCompile Include="unittests\AlternativeOrderableControllerLoadAlternativeGenericAvailableFlagTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerAddNonFormularyTherapeuticAlternativeNodesATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerAddTherapeuticAlternativeNodesATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerAddTherapeuticAlternativeNodesBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerAddTherapeuticCategoryNodesATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerAddTherapeuticCategoryNodesBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerApplySettingForFirstTNFOrder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerBuildNameOnlyCategoriesBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerBuildNameOnlyMapBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerBuildOneLevelUpMapBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerBuildSubCategoryMapBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerBuildTherapeuticAlternativeNodesATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerBuildTherapeuticAlternativeNodesBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerBuildTherapeuticAlternativeNodeTreeATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerCreateAndAddChildNodeATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerCreateAndAddChildNodeTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerCreateExactMatchAlternativeNodesTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerCreateTherapeuticAlternativeNodesATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerCreateTherapeuticAlternativesParentNodesATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerCreateTherapeuticAlternativesParentNodesBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerDetermineIfAlternativesExistForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerDetermineIfCategoryNodeExpandNeededForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerDetermineIfCategoryNodeHighlightNeededForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeorderablesControllerDetermineParentCategoryBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerDetermineRootCategoryListBCBTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerFillRootCategoryListForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerFindCommonRootsTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerGetNonFormularyRootNodeListForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerGetRootNodeListTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerIsConvertToInpatientWorkflowForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerIsExactMatchAlternativeTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerIsParentCategoryAlreadyInRootPathListTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadChildNodeListForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadChildNodeListTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadExactMatchAlternativeChildrenTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadFormularyAndNonFormularyAlternativeChildrenWithMatchTypeForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadFormularyAndNonFormularyAlternativeChildrenWithoutMatchTypeForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadFormularyTherapeuticAlternativesATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadFormularyTherapeuticCategoryItemsATCTest .cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadNonFormularyTherapeuticAlternativesATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadNonFormularyTherapeuticCategoriesATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadNonFormularyTherapeuticCategoryItemsATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadOtherAlternativeChildrenATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadOtherFormularyAndNonFormularyAlternativeChildrenForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadPrimarySynonymInformationATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadSuggestedAlternativeChildrenATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadSuggestedFormularyAndNonFormularyAlternativeChildrenForATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadTherapeuticCategoriesTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadTherapeuticCategoryChildrenATCTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadTherapeuticCategoryChildrenTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerLoadTherapeuticCategoryItemsTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerSetExactMatchLoadStatusTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesController_AddTherapeuticCategoryNodesTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeAddCostToChildrenTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeDrawCostTreeItemTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeDrawGenericReferentBitmapTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeGetAlternativesSynonymIdCatalogCdListTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeGetCostPrefTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeIsParentNodeExpandNeededTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeLoadAlternativesForCost.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeResetTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeLoadCostForAlternativesAsyncTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeShowCostToolTipTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeAddChildrenToTreeTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativesOrderablesTreeLoadNodeChildrenTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesControllerSetTherapeuticCategoryLoadPolicyTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\AlternativeOrderablesTreeAddNoAlternativesNodeTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\CLinkedCompGroupOverrideReasonContainerWndGetMinWidthTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\CLinkedCompGroupOverrideReasonContainerWndSaveOverrideReasonsTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\CLinkedCompGroupOverrideReasonContainerWndValidateTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\CLinkedCompGroupOverrideReasonWndValidateTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderSchedController_SetFieldToModifiedTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderConversionController_SelectOrderTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderSchedulerDlg_OnSelchangeCMBOSchedInstructionsTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\CPvFormularyStatusContainerWndGetCostPrefTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\FutureOrderBaseWndTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\FutureOrderStructControllerTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\LinkedCompGroupOverrideReasonDlgValidateTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderConversionAlternativesWndProcessUnitCostForFormularyItemsJobCompleteTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderSchedControllerTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderSchedController_AddOrderObjTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderSchedController_ApplyDetailsToOrdersTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderSchedController_ResetScheduleDlgObjectTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderSchedulerDlg_ApplyDetailsToSchedObsTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderSchedulerDlg_PopulateControlsWithDetailValuesTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\OrderSchedulerDlg_PopulateSchedInstructionsComboBoxTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PharmacyProductNonFormularySubDlgOnInitDialogTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PharmacyProductNonFormularySubDlgSelectFirstExactMatchAlternativeTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDiscernDialogIsPlannedProtocolTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDiscernDialog_CheckDoseTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDiscernDialogTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDiscernDialog_HasMultipleIngredientsTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDiscernDialog_IsCheckContinuousTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDiscernDialog_IsComponentIntermittentTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDoseCalc_OnCancelTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDoseCalc_SetDoseFieldsTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PVFormularyStatusDlgOnInitDialogTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PVFormularyStatusDlgSelectFirstExactMatchAlternativeTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\pvodexportstest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDoseCalcGetDoseCalcOrderTypeTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDoseCalcClearStrengthOrVolumeFieldTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDoseCalcInvokeDoseCalculatorTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvOrderSchedulerDlgTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'">/Zm100 %(AdditionalOptions)</AdditionalOptions>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\pvdosecalTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'">/Zm100 %(AdditionalOptions)</AdditionalOptions>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDoseCalc_GetOrderDoseInformationTest.Cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvOrdSentDlg_StoreICD9FieldValueFromPlannedCompOrderSent.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvTaperDlg_IsByDoseValidTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\GetDiscernProviderTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\PvDiscernDialogGetStartDtTmTest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="unittests\unittestexports.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'">/Zm100 %(AdditionalOptions)</AdditionalOptions>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="usernotificationdlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PVOrderDlg.def">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Unit Test|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="0467.bmp" />
+    <CustomBuild Include="2475.bmp" />
+    <CustomBuild Include="3909.bmp" />
+    <CustomBuild Include="5066.bmp" />
+    <CustomBuild Include="5272.bmp" />
+    <CustomBuild Include="5377_red.bmp" />
+    <CustomBuild Include="5378_vertical_flip.bmp" />
+    <CustomBuild Include="alertsimagelist.bmp" />
+    <CustomBuild Include="collapse_bw.bmp" />
+    <CustomBuild Include="columnimagelist.bmp" />
+    <CustomBuild Include="disabled_collapse_bw.bmp" />
+    <CustomBuild Include="disabled_expand_bw.bmp" />
+    <CustomBuild Include="dosecalc.bmp" />
+    <CustomBuild Include="downarrow.bmp" />
+    <CustomBuild Include="expand_bw.bmp" />
+    <CustomBuild Include="green_check.bmp" />
+    <CustomBuild Include="icon1.ico" />
+    <CustomBuild Include="icon2.ico" />
+    <CustomBuild Include="ordertypeimagelist.bmp" />
+    <CustomBuild Include="powerchart.ico" />
+    <CustomBuild Include="pvcatseltree.bmp" />
+    <CustomBuild Include="tree_remove.bmp" />
+    <CustomBuild Include="uparrow.bmp" />
+    <CustomBuild Include="white_box.bmp" />
+    <CustomBuild Include="error.bmp" />
+    <CustomBuild Include="generic.bmp" />
+    <CustomBuild Include="referent.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PVOrderDlg.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlternativeOrderableNode.h" />
+    <ClInclude Include="AlternativeOrderablesController.h" />
+    <ClInclude Include="AlternativeOrderablesTree.h" />
+    <ClInclude Include="BannerWnd.h" />
+    <ClInclude Include="IVSequenceNameDlg.h" />
+    <ClInclude Include="CDKiaNomenclatureSearch.h" />
+    <ClInclude Include="OrderCheckCmb.h" />
+    <ClInclude Include="ConvertToInpatientController.h" />
+    <ClInclude Include="ConvertToPrescriptionController.h" />
+    <ClInclude Include="converttorxdlg.h" />
+    <ClInclude Include="datehelper.h" />
+    <ClInclude Include="DxSelectionDlg.h" />
+    <ClInclude Include="EligibilityBaseWnd.h" />
+    <ClInclude Include="EligibilityDetailsDlg.h" />
+    <ClInclude Include="EligibilityError.h" />
+    <ClInclude Include="EligibilityNoPlan.h" />
+    <ClInclude Include="EligibilityPlanPane.h" />
+    <ClInclude Include="EligibilityPlansContainer.h" />
+    <ClInclude Include="ExactMatchAlternativeNode.h" />
+    <ClInclude Include="fonthelper.h" />
+    <ClInclude Include="FormularyAlternativeNode.h" />
+    <ClInclude Include="FutureOrderBaseWnd.h" />
+    <ClInclude Include="FutureOrderInfoWnd.h" />
+    <ClInclude Include="FutureOrderScheduleDlg.h" />
+    <ClInclude Include="FutureOrderStructController.h" />
+    <ClInclude Include="FutureOrderWnd.h" />
+    <ClInclude Include="FutureRecurringOrderWnd.h" />
+    <ClInclude Include="FutureSingleOrderWnd.h" />
+    <ClInclude Include="InfusionTypeDlg.h" />
+    <ClInclude Include="kiaclinicaldx.h" />
+    <ClInclude Include="LinkedCompGroupDescriptionGenerator.h" />
+    <ClInclude Include="LinkedCompGroupOverrideReasonContainerWnd.h" />
+    <ClInclude Include="LinkedCompGroupOverrideReasonDlg.h" />
+    <ClInclude Include="LinkedCompGroupOverrideReasonWnd.h" />
+    <ClInclude Include="listboxex.h" />
+    <ClInclude Include="MnemonicDlg.h" />
+    <ClInclude Include="NomenclatureSearchDlg.h" />
+    <ClInclude Include="NonFormularyAlternativeNode.h" />
+    <ClInclude Include="OrderConversionAlternativesWnd.h" />
+    <ClInclude Include="OrderConversionController.h" />
+    <ClInclude Include="OrderConversionDlg.h" />
+    <ClInclude Include="OrderConversionSpread.h" />
+    <ClInclude Include="OrderConversionWnd.h" />
+    <ClInclude Include="OrderSchedController.h" />
+    <ClInclude Include="OrderSchedulerDlg.h" />
+    <ClInclude Include="orm_DxTableSpread.h" />
+    <ClInclude Include="orm_OrderDxTableDlg.h" />
+    <ClInclude Include="OtherFormularyAlternativeNode.h" />
+    <ClInclude Include="OtherNonFormularyAlternativeNode.h" />
+    <ClInclude Include="PharmacyInfoDlg.h" />
+    <ClInclude Include="PharmacyInfoWnd.h" />
+    <ClInclude Include="pharmacyproductnonformularysubdlg.h" />
+    <ClInclude Include="plancommentsdlg.h" />
+    <ClInclude Include="plancommentspread.h" />
+    <ClInclude Include="pvactivespread.h" />
+    <ClInclude Include="pvactivespreadwnd.h" />
+    <ClInclude Include="PvAddFavoriteDlg.h" />
+    <ClInclude Include="PvBrowseFolder.h" />
+    <ClInclude Include="PvClinicalDiagnosisDlg.h" />
+    <ClInclude Include="pvconflictingordersdlg.h" />
+    <ClInclude Include="PvConvertToInpatientDlg.h" />
+    <ClInclude Include="pvdiscerndialog.h" />
+    <ClInclude Include="pvdosecalc.h" />
+    <ClInclude Include="PvFavTreeCtrl.h" />
+    <ClInclude Include="PvFormularyAlternativesList.h" />
+    <ClInclude Include="PvFormularyDefs.h" />
+    <ClInclude Include="PvFormularyStatusAgeRestrictionWnd.h" />
+    <ClInclude Include="PvFormularyStatusAlternativeDynamicControlsWnd.h" />
+    <ClInclude Include="PvFormularyStatusContainerWnd.h" />
+    <ClInclude Include="PvFormularyStatusCopayWnd.h" />
+    <ClInclude Include="PvFormularyStatusCoverageTextMessagesWnd.h" />
+    <ClInclude Include="PvFormularyStatusDlg.h" />
+    <ClInclude Include="PvFormularyStatusGroupBoxWnd.h" />
+    <ClInclude Include="PvFormularyStatusQuantityLimitsWnd.h" />
+    <ClInclude Include="PvFormularyStatusSelectedWnd.h" />
+    <ClInclude Include="PvFormularyStatusSpread.h" />
+    <ClInclude Include="PvFormularyStatusStepTherapyWnd.h" />
+    <ClInclude Include="PvFormularyStatusSummaryLinksWnd.h" />
+    <ClInclude Include="pvgenericspread.h" />
+    <ClInclude Include="pvgenericspreadwnd.h" />
+    <ClInclude Include="PvHighAlertDlg.h" />
+    <ClInclude Include="PVHighAlertWnd.h" />
+    <ClInclude Include="PVOrderDlg.h" />
+    <ClInclude Include="PvOrderDlg_UnitTestExport.h" />
+    <ClInclude Include="pvordsentdlg.h" />
+    <ClInclude Include="pvordsentwnd.h" />
+    <ClInclude Include="PvOrganizeFavoritesDlg.h" />
+    <ClInclude Include="PVRemainDoses.h" />
+    <ClInclude Include="pvrxmaskdlg.h" />
+    <ClInclude Include="pvslidingscaledlg.h" />
+    <ClInclude Include="PvTaperDlg.h" />
+    <ClInclude Include="PvTaperRegimenSpread.h" />
+    <ClInclude Include="PvTnfSelDlg.h" />
+    <ClInclude Include="pvtransferdlg.h" />
+    <ClInclude Include="pvtransferspread.h" />
+    <ClInclude Include="pvtransferspreadwnd.h" />
+    <ClInclude Include="pvtransfertab.h" />
+    <ClInclude Include="pvvalueunitparser.h" />
+    <ClInclude Include="renewalrequestsupphysseldlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResumeScheduleDlg.h" />
+    <ClInclude Include="SchedNowDlg.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SuggestedFormularyAlternativeNode.h" />
+    <ClInclude Include="SuggestedNonFormularyAlternativeNode.h" />
+    <ClInclude Include="supervisingproviderselectiondlg.h" />
+    <ClInclude Include="TherapeuticAlternativeNode.h" />
+    <ClInclude Include="TherapeuticNonFormularyAlternativeNode.h" />
+    <ClInclude Include="FreeTextNonFormularyAlternativeNode.h" />
+    <ClInclude Include="TreatmentPeriodSelectionDlg.h" />
+    <ClInclude Include="treatmentperiodskipdlg.h" />
+    <ClInclude Include="unittests\AlternativeOrderablesControllerRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\AlternativeOrderablesNodeRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\AlternativeOrderablesTreeRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\CdfMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\CDialogRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\ConvertToPrescriptionControllerMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\CToolTipCtrlRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\CTreeCtrlRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\CWndRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\DCP_CodeValueDataRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\DCP_ComboBoxRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\DCP_ContextRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\DCP_ProviderSelRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\DCP_UnitConversionRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\FormularyStatusAlternativeDynamicControlsWndRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\FutureOrderInfoWndRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\GlobalAPIRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\IComponentMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\IIngredientRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\IPhaseRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\IPlanRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\IPvOrderPlanManagerRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\LinkedCompGroupOverrideReasonContainerWndRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\LinkedCompGroupOverrideReasonWndMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\MsgApiRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\MsgWriteRfMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\OrderCheckCmbRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\OrderConversionControllerMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\AlternativeOrderablesControllerMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\OrderSchedControllerMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PharmacyProductNonFormularySubDlgRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\preferenceutilitymock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvCdf4004RFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvCdf54RFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvCdf6000RFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvCdf6003RFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvCombinationMedUtilRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvDiscernDialogMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvDiscernDialogTest.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvDoseCalcMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\pvfavtreectrlmock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvFavTreeCtrlOnToolTipNotifyTest.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\ctaperdlgmock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvFormularyStatusDlgRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvIntermittentIVUtilMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\pvodexportstest.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvOrderCommonObjRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvOrderEncounterUtilRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvOrderFldArrRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvOrderFldRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvOrderObDataExpRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvOrderObjRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvOrderSchedObjRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvOrderSchedulerDlgMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvOrdUtilRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvPoePrefsRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\PvPrefsRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\SrvRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\unittestexports.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\WinBaseRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="unittests\WinUserRFMock.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="usernotificationdlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="4018.bmp" />
+    <None Include="4022.bmp" />
+    <None Include="5104.bmp" />
+    <None Include="5350.bmp" />
+    <None Include="6274_16.bmp" />
+    <None Include="6439_16.gif" />
+    <None Include="unittests\PvOrderDlg_UnitTest.def">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Test Release (No Unit Tests)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='new_config|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="PVOrderDlg.rc" _x007B_C2D68420-8E77-43D9-BD4A-25B60A956F51_x007D_="CDKiaNomenclatureSearch" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
