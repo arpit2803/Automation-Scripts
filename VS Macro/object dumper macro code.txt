@@ -1,0 +1,117 @@
+Imports System
+Imports EnvDTE
+Imports EnvDTE80
+Imports EnvDTE90
+Imports EnvDTE90a
+Imports EnvDTE100
+Imports System.Diagnostics
+Imports System.ComponentModel
+Imports System.IO
+
+
+
+Public Module GetSelectedText
+    Public output As String
+    Sub GetSelectedInformation()
+
+        Dim objDocument As EnvDTE.Document
+        Dim objTextDocument As EnvDTE.TextDocument
+        Dim objTextSelection As EnvDTE.TextSelection
+        Dim sMsg As String
+
+        Try
+            output = ""
+            ' Get the active document
+            objDocument = DTE.ActiveDocument
+
+            ' Get the text document
+            objTextDocument = CType(objDocument.Object, EnvDTE.TextDocument)
+
+            ' Get the text selection object
+            objTextSelection = objTextDocument.Selection
+
+            ' Show some properties of the text selection
+            'sMsg = "ActivePoint: " & objTextSelection.ActivePoint.Line.ToString & ", " & _
+            objTextSelection.ActivePoint.LineCharOffset.ToString()
+            'sMsg &= "TopPoint: " & objTextSelection.TopPoint.Line.ToString & ", " & _
+            objTextSelection.TopPoint.LineCharOffset.ToString()
+            'sMsg &= "BottomPoint: " & objTextSelection.BottomPoint.Line.ToString & ", " & _
+            objTextSelection.BottomPoint.LineCharOffset.ToString()
+            'sMsg &= "Text: " & objTextSelection.Text
+            sMsg = objTextSelection.Text
+
+            MsgBox(sMsg)
+            DumpLocals(sMsg)
+        Catch objException As System.Exception
+            MsgBox(objException.ToString)
+        End Try
+
+    End Sub
+    Sub DumpLocals(ByVal objName As String)
+        Dim outputWindow As EnvDTE.OutputWindow
+        outputWindow = DTE.Windows.Item(EnvDTE.Constants.vsWindowKindOutput).Object
+        Dim currentStackFrame As EnvDTE.StackFrame
+        currentStackFrame = DTE.Debugger.CurrentStackFrame
+        outputWindow.ActivePane.OutputString("*Dumping Local Variables*" + vbCrLf)
+        For Each exp As EnvDTE.Expression In currentStackFrame.Locals
+            If String.CompareOrdinal(objName, exp.Name) = 0 Then
+                outputWindow.ActivePane.OutputString(exp.Name + " = " + exp.Value.ToString() + vbCrLf)
+                helperDisplay(exp.DataMembers, outputWindow, 1)
+                Dim path1 As String = "C:\compare_object\" + objName + "_Before.txt"
+                Dim path2 As String = "C:\compare_object\" + objName + "_After.txt"
+                'Dim path2 As String = "C:\compare_object\2.txt"
+                If (File.Exists(path1) = True And File.Exists(path2) = True) Then
+                    File.Delete(path1)
+                    File.Delete(path2)
+                    File.WriteAllText(path1, output)
+                ElseIf File.Exists(path1) = False Then
+                    File.WriteAllText(path1, output)
+                Else
+                    File.WriteAllText(path2, output)
+                End If
+            End If
+        Next
+    End Sub
+
+    Private Sub helperDisplay(ByVal exps As EnvDTE.Expressions, ByVal OutputWindow As EnvDTE.OutputWindow, ByVal n As Integer)
+        Dim counter As Int32 = 0
+        'Static output As String = ""
+        counter = counter + 1
+        For Each ex In exps
+            helperTabs(n, OutputWindow)
+            If (ex.Name = "Non-Public members" Or ex.Name = "Static members") Then
+                Dim stringDummy As String = "- " + ex.Name + ": There are " + ex.DataMembers.Count.ToString + vbCrLf
+                OutputWindow.ActivePane.OutputString(stringDummy)
+                output += stringDummy
+            Else
+                Dim stringDummy As String = "- " + ex.Name + ": " + ex.Value.ToString() + vbCrLf
+                OutputWindow.ActivePane.OutputString(stringDummy)
+                output += stringDummy
+                If (ex.DataMembers.Count <> 0) Then
+                    If (counter <> ex.DataMembers.Count) Then
+                        helperDisplay(ex.DataMembers, OutputWindow, n + 1)
+                    End If
+                End If
+            End If
+        Next
+    End Sub
+    Private Sub helperTabs(ByVal n As Integer, ByRef OutputWindow As EnvDTE.OutputWindow)
+        For i = 1 To n Step 1
+            output += ControlChars.Tab
+            OutputWindow.ActivePane.OutputString(vbTab)
+        Next
+    End Sub
+
+
+    'Sub PrintObjProperties(ByVal objName As String)
+    '   For Each descriptor In TypeDescriptor.GetProperties(objName)
+    '       String name = PropertyDescriptor(descriptor).ToString
+    '      Object value = descriptor
+
+
+
+    '   Next
+
+    ' End Sub
+
+End Module
